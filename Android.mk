@@ -1,4 +1,4 @@
-ifeq (tama,$(PRODUCT_PLATFORM))
+ifeq (sdm845,$(PRODUCT_PLATFORM))
 
 LOCAL_PATH := $(call my-dir)
 

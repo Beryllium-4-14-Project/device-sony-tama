@@ -13,10 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/tama
-
-SOMC_PLATFORM := tama
-SOMC_KERNEL_VERSION := 4.14
+PLATFORM_COMMON_PATH := device/xiaomi/sdm845-common
 
 PRODUCT_PLATFORM_SOD := true
 
@@ -183,8 +180,8 @@ PRODUCT_COPY_FILES += \
 
 # Platform specific init
 PRODUCT_PACKAGES += \
-    init.tama \
-    init.tama.pwr \
+    init.sdm845 \
+    init.sdm845.pwr \
     ueventd
 
 # Audio
@@ -320,6 +317,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.iwlan_operation_mode=legacy
 
-$(call inherit-product, device/sony/common/common.mk)
+$(call inherit-product, device/xiaomi/sdm845-common/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)

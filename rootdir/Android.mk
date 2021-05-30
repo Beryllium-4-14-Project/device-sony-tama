@@ -1,29 +1,29 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := fstab.$(TARGET_DEVICE)
-LOCAL_SRC_FILES := vendor/etc/fstab.tama
+LOCAL_MODULE := fstab.sdm845
+LOCAL_SRC_FILES := vendor/etc/fstab.sdm845
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_STEM := fstab.$(TARGET_DEVICE)
+LOCAL_MODULE_STEM := fstab.sdm845
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := init.tama
-LOCAL_SRC_FILES := vendor/etc/init/init.tama.rc
+LOCAL_MODULE := init.sdm845
+LOCAL_SRC_FILES := vendor/etc/init/init.sdm845.rc
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_STEM := init.tama
+LOCAL_MODULE_STEM := init.sdm845
 LOCAL_MODULE_SUFFIX := .rc
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := init.tama.pwr
-LOCAL_SRC_FILES := vendor/etc/init/init.tama.pwr.rc
+LOCAL_MODULE := init.sdm845.pwr
+LOCAL_SRC_FILES := vendor/etc/init/init.sdm845.pwr.rc
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_STEM := init.tama.pwr
+LOCAL_MODULE_STEM := init.sdm845.pwr
 LOCAL_MODULE_SUFFIX := .rc
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init

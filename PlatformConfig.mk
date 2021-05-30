@@ -35,7 +35,7 @@ BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=dsi_panel_somc_tama_cmd:config0
 #BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0xa84000 restore_msm_uart=0x03404000
 
 TARGET_RECOVERY_WIPE := $(PLATFORM_COMMON_PATH)/rootdir/recovery.wipe
-TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.tama
+TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.sdm845
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
@@ -54,4 +54,4 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 # DTBO partition definitions
 TARGET_NEEDS_DTBOIMAGE ?= true
 
-include device/sony/common/CommonConfig.mk
+include device/xiaomi/sdm845-common/CommonConfig.mk
