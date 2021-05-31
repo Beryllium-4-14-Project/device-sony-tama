@@ -29,22 +29,7 @@
 
 static inline const char* getBTDefaultName()
 {
-    char device[PROPERTY_VALUE_MAX];
-    property_get("ro.boot.hardware", device, "");
-
-    if (!strcmp("akari", device)) {
-        return "Xperia XZ2";
-    }
-
-    if (!strcmp("akatsuki", device)) {
-        return "Xperia XZ3";
-    }
-
-    if (!strcmp("apollo", device)) {
-        return "Xperia XZ2 Compact";
-    }
-
-    return "Xperia";
+    return "Xiaomi SDM845";
 }
 
 #define BTM_DEF_LOCAL_NAME getBTDefaultName()
